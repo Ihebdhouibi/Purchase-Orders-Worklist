@@ -6,17 +6,16 @@ sap.ui.define([
 
 	var aMockservers = [];
 
-	// initialize the mock server
-	// aMockservers.push(mockserver.init());
-	mockserver.init();
+	// comment 
 
-/* 
+	// initialize the mock server
+	aMockservers.push(mockserver.init());
+
 	Promise.all(aMockservers).catch(function (oError) {
 		MessageBox.error(oError.message);
 	}).finally(function () {
 		// initialize the embedded component on the HTML page
 		sap.ui.require(["sap/ui/core/ComponentSupport"]);
-	}); */
+	});
 
-	sap.ui.require(["sap/ui/core/ComponentSupport"]); 
 });
