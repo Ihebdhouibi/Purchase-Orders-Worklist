@@ -1,0 +1,146 @@
+[
+    {
+      "__metadata" : {
+        "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+        "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+        "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+      },
+      "PoNumber" : "1001000",
+      "PoItem" : "00010",
+      "ShortText" : "MM101 - Pipe",
+      "Material" : "000000000001011000",
+      "CoCode" : "HC00",
+      "Plant" : "M101",
+      "StoreLoc" : "1000",
+      "MatGrp" : "M101",
+      "TargetQty" : "150.000",
+      "NetPrice" : "150.0000",
+      "NetValue" : "0.0000"
+    },
+    {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "1001000",
+        "PoItem" : "00010",
+        "ShortText" : "MM101 - Pipe",
+        "Material" : "000000000001011000",
+        "CoCode" : "HC00",
+        "Plant" : "M101",
+        "StoreLoc" : "1000",
+        "MatGrp" : "M101",
+        "TargetQty" : "150.000",
+        "NetPrice" : "150.0000",
+        "NetValue" : "0.0000"
+      }
+  ]
