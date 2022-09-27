@@ -11,7 +11,7 @@ sap.ui.define([
 		_sJsonFilesPath = _sAppPath + "localService/mockdata";
 
 	var oMockServerInterface = {
-		/** lets just add a random comment */
+
 		/**
 		 * Initializes the mock server asynchronously.
 		 * You can configure the delay with the URL parameter "serverDelay".
