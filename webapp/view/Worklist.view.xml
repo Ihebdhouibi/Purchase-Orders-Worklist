@@ -22,6 +22,9 @@
 					sorter: {
 						path: 'ProductName',
 						descending: false
+					},
+					parameters: {
+						'expand': 'Supplier'
 					}
 				}"
 				noDataText="{worklistView>/tableNoDataText}"
@@ -29,7 +32,7 @@
 				growing="true"
 				growingScrollToLoad="true"
 				updateFinished=".onUpdateFinished">
-
+				
 				<headerToolbar>
 					<Toolbar>
 						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}"/>
