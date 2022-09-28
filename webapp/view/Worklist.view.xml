@@ -98,9 +98,7 @@
 								minScreenWidth="Tablet">
 								<Text text="{i18n>company}"/>
 							</Column>
-							<Column id="unitsOnOrderColumn"
-								demandPopin="true"
-								minScreenWidth="Tablet"
+							<Column id="Spras"
 								hAlign="End">
 								<Text text="{i18n>language}"/>
 							</Column>
@@ -115,7 +113,14 @@
 									title="{Ebeln}"/>
 								<Text text = "{Lifnr}"/>
 								<Text text = "{Bukrs}"/>
-								<Text text = "{Spras}"/>								
+								<Text text = "{Spras}"/>	
+
+								<ObjectNumber
+									number="{Spras}"										
+									unit="PC"
+									state="{
+										path: 'Spras',
+										formatter: '.formatter.languageState'}"/>							
 							</cells>
 							</ColumnListItem>
 						</items>
