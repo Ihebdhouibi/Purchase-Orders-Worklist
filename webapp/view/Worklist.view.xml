@@ -49,7 +49,7 @@
 						icon="sap-icon://message-error"
 						iconColor="Negative"
 						count="{worklistView>/livraison}"
-						text="{i18n>WorklistFilterOutOfStock}"/>
+						text="{i18n>livraison}"/>
 				</items>
 				<content>
 					<Table
@@ -83,26 +83,26 @@
 							<Column id="nameColumn">
 								<Text
 									id="nameColumnTitle"
-									text="{i18n>TableNameColumnTitle}"/>
+									text="{i18n>PurchaseNum}"/>
 							</Column>
 							<Column
 								id="supplierNameColumn"
 								demandPopin="false"
 								minScreenWidth="Tablet">
-								<Text text="{i18n>TableSupplierColumnTitle}"/>
+								<Text text="{i18n>vendor}"/>
 							</Column>
 							<Column
 								id="unitPriceColumn"
 								hAlign="End"
 								demandPopin="true"
 								minScreenWidth="Tablet">
-								<Text text="{i18n>TablePriceColumnTitle}"/>
+								<Text text="{i18n>company}"/>
 							</Column>
 							<Column id="unitsOnOrderColumn"
 								demandPopin="true"
 								minScreenWidth="Tablet"
 								hAlign="End">
-								<Text text="{i18n>TableUnitsOrderedColumnTitle}"/>
+								<Text text="{i18n>language}"/>
 							</Column>
 
 						</columns>
