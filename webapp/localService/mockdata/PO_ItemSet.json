@@ -5,7 +5,7 @@
         "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
         "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
       },
-      "PoNumber" : "1001000",
+      "PoNumber" : "1101002",
       "PoItem" : "00010",
       "ShortText" : "MM101 - Pipe",
       "Material" : "000000000001011000",
@@ -70,6 +70,113 @@
         "TargetQty" : "150.000",
         "NetPrice" : "150.0000",
         "NetValue" : "0.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "4500019080",
+        "PoItem" : "00010",
+        "ShortText" : "CHARIOT A FOURCHE",
+        "Material" : "000000000000003749",
+        "CoCode" : "1000",
+        "Plant" : "1000",
+        "StoreLoc" : "0001",
+        "MatGrp" : "24000000",
+        "TargetQty" : "0.000",
+        "NetPrice" : "630.0000",
+        "NetValue" : "1260.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "4500019081",
+        "PoItem" : "00010",
+        "ShortText" : "peinture",
+        "Material" : "",
+        "CoCode" : "1000",
+        "Plant" : "1000",
+        "StoreLoc" : "",
+        "MatGrp" : "00101",
+        "TargetQty" : "0.000",
+        "NetPrice" : "12.0000",
+        "NetValue" : "1200.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "4500019082",
+        "PoItem" : "00010",
+        "ShortText" : "SERVICE peinture",
+        "Material" : "",
+        "CoCode" : "1000",
+        "Plant" : "1000",
+        "StoreLoc" : "",
+        "MatGrp" : "001",
+        "TargetQty" : "0.000",
+        "NetPrice" : "7.5000",
+        "NetValue" : "750.0000"
+      },
+      {"__metadata" : {
+        "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+        "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+        "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+      },
+      "PoNumber" : "4500019083",
+      "PoItem" : "00010",
+      "ShortText" : "TRANSPALETTE T12",
+      "Material" : "",
+      "CoCode" : "1000",
+      "Plant" : "1000",
+      "StoreLoc" : "",
+      "MatGrp" : "001210",
+      "TargetQty" : "0.000",
+      "NetPrice" : "3000.0000",
+      "NetValue" : "15000.0000"
+    },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "4500019079",
+        "PoItem" : "00010",
+        "ShortText" : "CHARIOT A FOURCHE",
+        "Material" : "000000000000003749",
+        "CoCode" : "1000",
+        "Plant" : "1000",
+        "StoreLoc" : "",
+        "MatGrp" : "24000000",
+        "TargetQty" : "0.000",
+        "NetPrice" : "630.0000",
+        "NetValue" : "630.0000"
+      },
+      {
+        "__metadata" : {
+          "id" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "uri" : "http://EHP7.training.com:8007/sap/opu/odata/SAP/ZFIORI_PROJECT_SRV_02/PO_ItemSet('00010')",
+          "type" : "ZFIORI_PROJECT_SRV_02.PO_Item"
+        },
+        "PoNumber" : "4500019078",
+        "PoItem" : "00010",
+        "ShortText" : "service",
+        "Material" : "",
+        "CoCode" : "1000",
+        "Plant" : "1000",
+        "StoreLoc" : "",
+        "MatGrp" : "002",
+        "TargetQty" : "0.000",
+        "NetPrice" : "1.0000",
+        "NetValue" : "1.0000"
       },
       {
         "__metadata" : {

@@ -20,6 +20,7 @@
 					<Property  Name="TargetQty" Type="Edm.Decimal" Precision="13" Scale="3" sap:label="Target Quantity" /> 
 					<Property  Name="NetPrice" Type="Edm.Decimal" Precision="23" Scale="4" sap:label="Net price" /> 
 					<Property  Name="NetValue" Type="Edm.Decimal" Precision="23" Scale="4" sap:label="Net value" /> 
+					
 			</EntityType>
 
 			<EntityType Name="PO_Header" sap:content-version="1">
