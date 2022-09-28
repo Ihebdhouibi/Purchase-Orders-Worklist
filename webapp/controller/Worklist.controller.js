@@ -28,6 +28,7 @@ sap.ui.define([
 			// so it can be restored later on. Busy handling on the table is
 			// taken care of by the table itself.
 			iOriginalBusyDelay = oTable.getBusyIndicatorDelay();
+			this._oTable = oTable;
 			// keeps the search state
 			this._aTableSearchState = [];
 
@@ -38,9 +39,22 @@ sap.ui.define([
 				shareSendEmailSubject: this.getResourceBundle().getText("shareSendEmailWorklistSubject"),
 				shareSendEmailMessage: this.getResourceBundle().getText("shareSendEmailWorklistMessage", [location.href]),
 				tableNoDataText : this.getResourceBundle().getText("tableNoDataText"),
-				tableBusyDelay : 0
+				tableBusyDelay : 0,
+				offre: 0,
+				contrat: 0,
+				commande: 0,
+				livraison: 0,
+				countAll: 0
 			});
 			this.setModel(oViewModel, "worklistView");
+						// Create an object of filters
+						this._mFilters = {
+							"offre":     [new Filter("Bstyp", FilterOperator.EQ, 'A')],
+							"contrat":   [new Filter("Bstyp", FilterOperator.EQ, 'K')],
+							"commande":  [new Filter("Bstyp", FilterOperator.EQ, 'F')],
+							"livraison": [new Filter("Bstyp", FilterOperator.EQ, 'L')],
+							"all":       []
+						};
 
 			// Make sure, busy indication is showing immediately so there is no
 			// break after the busy indication for loading the view's meta data is
@@ -68,11 +82,46 @@ sap.ui.define([
 			// update the worklist's object counter after the table update
 			var sTitle,
 				oTable = oEvent.getSource(),
+				oViewModel = this.getModel("worklistView"),
 				iTotalItems = oEvent.getParameter("total");
 			// only update the counter if the length is final and
 			// the table is not empty
 			if (iTotalItems && oTable.getBinding("items").isLengthFinal()) {
 				sTitle = this.getResourceBundle().getText("worklistTableTitleCount", [iTotalItems]);
+				// Get the count for all the products and set the value to 'countAll' property
+				this.getModel().read("/PO_HeaderSet/$count", {
+									success: function (oData) {
+										oViewModel.setProperty("/countAll", oData);
+									}
+								});
+				// read the count for the unitsInStock filter
+				this.getModel().read("/PO_HeaderSet/$count", {
+					success: function (oData) {
+						oViewModel.setProperty("/offre", oData);
+					},
+					filters: this._mFilters.offre
+				});
+				// read the count for the outOfStock filter
+				this.getModel().read("/PO_HeaderSet/$count", {
+					success: function(oData){
+						oViewModel.setProperty("/contrat", oData);
+					},
+					filters: this._mFilters.contrat
+				});
+				// read the count for the shortage filter
+				this.getModel().read("/PO_HeaderSet/$count", {
+					success: function(oData){
+						oViewModel.setProperty("/commande", oData);
+					},
+					filters: this._mFilters.commande
+				});
+				// read the count for the shortage filter
+				this.getModel().read("/PO_HeaderSet/$count", {
+									success: function(oData){
+										oViewModel.setProperty("/livraison", oData);
+									},
+									filters: this._mFilters.livraison
+								});
 			} else {
 				sTitle = this.getResourceBundle().getText("worklistTableTitle");
 			}
@@ -157,6 +206,16 @@ sap.ui.define([
 			if (aTableSearchState.length !== 0) {
 				oViewModel.setProperty("/tableNoDataText", this.getResourceBundle().getText("worklistNoDataWithSearchText"));
 			}
+		},
+				/**
+		 * Event handler when a filter tab gets pressed
+		 * @param {sap.ui.base.Event} oEvent the filter tab event
+		 * @public
+		 */
+		onQuickFilter: function(oEvent) {
+			var oBinding = this._oTable.getBinding("items"),
+				sKey = oEvent.getParameter("selectedKey");
+			oBinding.filter(this._mFilters[sKey]);
 		}
 
 	});
