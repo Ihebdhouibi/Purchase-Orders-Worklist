@@ -47,6 +47,8 @@ This project consist of two version.
     <li> Display Purchase Orders </li>
     <li> Classify Purchase Orders according to document category </li>
     <li> View Purchase Order items </li>
+    <li> Use Mockdata to simulate OData service </li>
+    <li> Fetch one item per Purchase order </li>
 </ul>
 
 ### Second version 
@@ -55,6 +57,7 @@ This project consist of two version.
     <li> Export data as excel file </li>
     <li> Quick Search & Filer </li>
     <li> Use read OData service </li>
+    <li> Fetch all items per Purchase order </li>
 </ul>
 
 
