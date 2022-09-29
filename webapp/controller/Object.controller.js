@@ -82,6 +82,7 @@ sap.ui.define([
 				var sObjectPath = this.getModel().createKey("PO_ItemSet", {
 					PoNumber :  sObjectId
 				});
+				this._bindView("/" + sObjectPath);
 			}.bind(this));
 		},
 
@@ -130,6 +131,8 @@ sap.ui.define([
 				oObject = oView.getBindingContext().getObject(),
 				sObjectId = oObject.PoNumber,
 				sObjectName = oObject.ShortText;
+			console.log(sObjectId)
+			console.log(oObject.PoItem)
 			oViewModel.setProperty("/busy", false);
 			oViewModel.setProperty("/shareSendEmailSubject",
 			oResourceBundle.getText("shareSendEmailObjectSubject", [sObjectId]));
