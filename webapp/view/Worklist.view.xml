@@ -80,25 +80,25 @@
 					</headerToolbar>
 
 						<columns>
-							<Column id="nameColumn">
+							<Column id="orderNumber">
 								<Text
 									id="nameColumnTitle"
 									text="{i18n>PurchaseNum}"/>
 							</Column>
 							<Column
-								id="supplierNameColumn"
+								id="vendor"
 								demandPopin="false"
 								minScreenWidth="Tablet">
 								<Text text="{i18n>vendor}"/>
 							</Column>
 							<Column
-								id="unitPriceColumn"
+								id="company"
 								hAlign="End"
 								demandPopin="true"
 								minScreenWidth="Tablet">
 								<Text text="{i18n>company}"/>
 							</Column>
-							<Column id="SprasColumn"
+							<Column id="spras"
 								hAlign="End">
 								<Text text="{i18n>language}"/>
 							</Column>
