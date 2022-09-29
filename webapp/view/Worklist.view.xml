@@ -113,10 +113,10 @@
 									title="{Ebeln}"/>
 								<Text text = "{Lifnr}"/>
 								<Text text = "{Bukrs}"/>
-								<Text text = "{Spras}"/>	
+							
 
 								<ObjectNumber							
-									unit="PC"
+									unit="{Spras}"
 									state="{
 										path: 'Spras',
 										formatter: '.formatter.languageState'}"/>							
