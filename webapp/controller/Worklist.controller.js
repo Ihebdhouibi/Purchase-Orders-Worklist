@@ -189,7 +189,7 @@ sap.ui.define([
 		 */
 		_showObject : function (oItem) {
 			this.getRouter().navTo("object", {
-				objectId: oItem.getBindingContext().getProperty("ProductID")
+				objectId: oItem.getBindingContext().getProperty("Ebeln")
 			});
 		},
 

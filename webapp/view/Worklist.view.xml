@@ -60,7 +60,7 @@
 						noDataText="{worklistView>/tableNoDataText}"
 						updateFinished=".onUpdateFinished"
 						width="auto"
-						mode="MultiSelect"
+						
 						items="{
 							path: '/PO_HeaderSet'
 						}">
@@ -98,7 +98,7 @@
 								minScreenWidth="Tablet">
 								<Text text="{i18n>company}"/>
 							</Column>
-							<Column id="Spras"
+							<Column id="SprasColumn"
 								hAlign="End">
 								<Text text="{i18n>language}"/>
 							</Column>
@@ -115,8 +115,7 @@
 								<Text text = "{Bukrs}"/>
 								<Text text = "{Spras}"/>	
 
-								<ObjectNumber
-									number="{Spras}"										
+								<ObjectNumber							
 									unit="PC"
 									state="{
 										path: 'Spras',

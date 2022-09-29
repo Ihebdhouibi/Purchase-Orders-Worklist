@@ -15,16 +15,12 @@ sap.ui.define([
 		 * @returns {string} sValue with 2 digits rounded
 		 */
 		languageState : function(iValue) {
-			console.log("slm")
-			console.log(iValue)
 			if (iValue == 'E') {
-				console.log("english")
+				//console.log(ValueState.Error)
 				return ValueState.Error;
 			} else if (iValue == 'F') {
-				console.log("French")
 				return ValueState.Success;
 			} else {
-				console.log("deutsh")
 				return ValueState.Warning;
 			}
 		}

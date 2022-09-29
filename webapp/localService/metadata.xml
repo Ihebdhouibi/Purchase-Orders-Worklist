@@ -7,7 +7,7 @@
 		<Schema Namespace="ZFIORI_PROJECT_SRV_02" xml:lang="en" sap:schema-version="0000" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
 			<EntityType Name="PO_Item" sap:content-version="1">
 				<Key>
-					<PropertyRef  Name="PoItem" /> 
+					<PropertyRef  Name="PoNumber" /> 
 				</Key>
 					<Property  Name="PoNumber" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Purchasing Doc." /> 
 					<Property  Name="PoItem" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Item" /> 

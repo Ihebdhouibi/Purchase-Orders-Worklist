@@ -101,7 +101,7 @@
 					"target": ["worklist"]
 				},
 				{
-					"pattern": "Products/{objectId}",
+					"pattern": "PO_ItemSet/{objectId}",
 					"name": "object",
 					"target": ["object"]
 				}

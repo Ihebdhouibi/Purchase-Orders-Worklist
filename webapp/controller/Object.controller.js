@@ -77,12 +77,16 @@ sap.ui.define([
 		 * @private
 		 */
 		_onObjectMatched : function (oEvent) {
+			console.log("1")
 			var sObjectId =  oEvent.getParameter("arguments").objectId;
 			this.getModel().metadataLoaded().then( function() {
-				var sObjectPath = this.getModel().createKey("Products", {
-					ProductID :  sObjectId
+				console.log("text");
+				var sObjectPath = this.getModel().createKey("PO_ItemSet", {
+					PoNumber :  sObjectId
 				});
+				console.log(this.getModel)
 				this._bindView("/" + sObjectPath);
+				console.log(sObjectPath)
 			}.bind(this));
 		},
 
@@ -129,8 +133,12 @@ sap.ui.define([
 
 			var oResourceBundle = this.getResourceBundle(),
 				oObject = oView.getBindingContext().getObject(),
-				sObjectId = oObject.ProductID,
-				sObjectName = oObject.ProductName;
+				sObjectId = oObject.PoNumber,
+				sObjectName = oObject.ShortText,
+				sObjectDes = oObject.CoCode;
+			console.log(sObjectName)
+			console.log(sObjectDes)
+
 
 			oViewModel.setProperty("/busy", false);
 			oViewModel.setProperty("/shareSendEmailSubject",
@@ -138,6 +146,7 @@ sap.ui.define([
 			oViewModel.setProperty("/shareSendEmailMessage",
 			oResourceBundle.getText("shareSendEmailObjectMessage", [sObjectName, sObjectId, location.href]));
 		}
+
 
 	});
 

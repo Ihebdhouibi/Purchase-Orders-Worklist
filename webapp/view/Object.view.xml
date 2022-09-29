@@ -2,7 +2,8 @@
 	controllerName="mycompany.myapp.MyWorklistApp.controller.Object"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:semantic="sap.f.semantic">
+	xmlns:semantic="sap.f.semantic"
+	xmlns:form="sap.ui.layout.form">
 
 	<semantic:SemanticPage
 		id="page"
@@ -12,18 +13,78 @@
 		busyIndicatorDelay="{objectView>/delay}">
 
 		<semantic:titleHeading>
-			<Title text="{ProductName}" />
+			<Title text="{}" />
 		</semantic:titleHeading>
 
-		<semantic:headerContent>
-			<ObjectNumber
-				number="{
-					path: 'UnitsInStock',
-					formatter: '.formatter.numberUnit'
-				}"
-			/>
-		</semantic:headerContent>
 
+
+		<semantic:headerContent>
+			<FlexBox alignItems="Start"
+				justifyContent="SpaceBetween">
+
+				<Panel backgroundDesign="Transparent">
+					<ObjectAttribute
+						title="{i18n>PurchaseOrderIDText}"
+						text="{
+						path: 'PoNumber'}"/>
+				</Panel>
+				<Panel backgroundDesign="Transparent">
+					<ObjectNumber
+						number="{
+							path: 'Spras'
+						}"
+						state="{
+							path: 'Spras',
+							formatter: '.formatter.numberUnit'
+						}"
+					/>
+
+				</Panel>
+			</FlexBox>
+		</semantic:headerContent>
+    <semantic:content>
+        <Panel
+            class="sapUiNoContentPadding"
+            headerText="{i18n>OrderItems}">
+            <content>
+                <form:SimpleForm
+                    minWidth="1024"
+                    maxContainerCols="2"
+                    editable="false"
+                    layout="ResponsiveGridLayout"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    columnsL="1"
+                    columnsM="1">
+                    <form:content>
+                        <Label text="{i18n>PoItem}"/>
+                        <Text text="{PoItem}"/>
+						<Label text="{i18n>ShortText}"/>
+                        <Text text="{ShortText}"/>
+						<Label text="{i18n>Material}"/>
+                        <Text text="{Material}"/>
+						<Label text="{i18n>CoCode}"/>
+                        <Text text="{CoCode}"/>
+						<Label text="{i18n>Plant}"/>
+                        <Text text="{Plant}"/>
+						<Label text="{i18n>StoreLoc}"/>
+                        <Text text="{StoreLoc}"/>
+						<Label text="{i18n>MatGrp}"/>
+                        <Text text="{CMatGrp}"/>
+						<Label text="{i18n>TargetQty}"/>
+                        <Text text="{TargetQty}"/>
+						<Label text="{i18n>NetPrice}"/>
+                        <Text text="{NetPrice}"/>
+						<Label text="{i18n>NetValue}"/>
+                        <Text text="{NetValue}"/>
+                    </form:content>
+                </form:SimpleForm>
+            </content>
+        </Panel>
+
+    </semantic:content>
 		<semantic:sendEmailAction>
 			<semantic:SendEmailAction id="shareEmail" press=".onShareEmailPress"/>
 		</semantic:sendEmailAction>
